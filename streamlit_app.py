@@ -298,7 +298,7 @@ def load_data(conn):
 
 def update_data(conn, df, changes):
     """Updates the inventory data in the database."""
-    cursor = conn.cursor()
+#    cursor = conn.cursor()
 
     if changes["edited_rows"]:
         deltas = st.session_state.inventory_table["edited_rows"]
